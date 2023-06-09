@@ -1,0 +1,19 @@
+admissionControl:
+    dynamic:
+        disableBypass: false
+        enforceOnCreates: false
+        enforceOnUpdates: false
+        scanInline: false
+        timeout: 3
+    listenOnCreates: true
+    listenOnEvents: true
+    listenOnUpdates: true
+centralEndpoint: <Insert Central Endpoint>
+clusterName: <Insert Cluster Name>
+collector:
+    collectionMethod: EBPF
+    disableTaintTolerations: false
+    slimMode: true
+helmManaged: false
+imagePullSecrets:
+  useExisting: pull-secret
